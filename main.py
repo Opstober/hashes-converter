@@ -1,4 +1,4 @@
-import os, hashlib 
+import os, hashlib
 
 os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -9,7 +9,7 @@ os.system('cls' if os.name == 'nt' else 'clear')
 supported_algorithm = hashlib.algorithms_available
 
 if algorithm == '?':
-    print(hashlib.algorithms_available)
+    print(f"Available algorithm:\n{hashlib.algorithms_available}")
     exit()
 elif algorithm not in supported_algorithm:
     print(f'\nWTF is {algorithm}!?\n')
